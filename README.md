@@ -5,7 +5,7 @@ tweet](https://twitter.com/NinjaEconomics/status/734136441496707073) earlier
 today.  While I didn't think the conclusion was fantastically controversial, a
 couple of things jumped out at me:
 
-* I know New Zealand offers some paid leave after the birth of a child.
+* I know New Zealand offers *some* paid leave after the birth of a child.
 * I know Canada offers 52 weeks of paid leave after the birth of a child.
 
 On the graph shown in the tweet, New Zealand is displayed as offering no paid
@@ -27,9 +27,9 @@ that URL.  I'm not sure what data they used for the chart, so I just chose 2012
 as it looked to be a reasonably complete year.
 
 You can find the exported CSV in this repo as
-*GENDER_EMP_22052016060624891.csv*.  A touched-up version exists in
-*gap_data.csv*, and the recipe to create that file are in the attached
-Makefile.
+*data/raw/GENDER_EMP_22052016060624891.csv*.  A touched-up version exists in
+*data/working/gap_data.csv*, and the recipe to create that file are in the
+attached Makefile.
 
 Parental leave data can be found in [this OECD PDF I
 found](https://www.oecd.org/els/soc/PF2_1_Parental_leave_systems.pdf).  I
@@ -79,8 +79,8 @@ clarification in any of the data I've used.
 
 I didn't put much work into this - I just wanted to see what was up with the
 chart, and how a quick analysis performed on my own, with comparable data,
-would measure up.  You can see what I did in the *analysis.r* file.  It's just
-a few of plots that I'll leave here, without comment.
+would measure up.  You can see what I did in the *src/analysis.r* file.  It's
+just a few plots that I'll leave here, without much comment.
 
 **Feel free to fork and improve the analysis if you think my basic one is
 lacking, or if you spot any errors**.
@@ -97,9 +97,9 @@ And then, wage gap data vs *total* parental leave:
 The measured correlation is 0.1917 in the case of parental leave, vs. 0.1319
 for total leave.
 
-The variation is such that that you might argue a quantile regression would be
-more suiting.  Here's the first plot again with a 0.5 (median) quantile
-regression line:
+The variation along the wage gap axis is such that that you might argue a
+robust regression would be more suiting.  Here's the first plot again with a
+0.5 (median) quantile regression line:
 
 ![gap vs paid parental leave](https://github.com/jtobin/gap-leave-analysis/raw/master/figures/p2.png)
 
