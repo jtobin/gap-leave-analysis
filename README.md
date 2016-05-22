@@ -5,8 +5,8 @@ tweet](https://twitter.com/NinjaEconomics/status/734136441496707073) earlier
 today.  While I didn't think the conclusion was fantastically controversial, a
 couple of things jumped out at me:
 
-* I know New Zealand offers some paid parental leave.
-* I know Canada offers 52 weeks of paid parental leave.
+* I know New Zealand offers some paid leave after the birth of a child.
+* I know Canada offers 52 weeks of paid leave after the birth of a child.
 
 On the graph shown in the tweet, New Zealand is displayed as offering no paid
 parental leave, and Canada is displayed as offering less than 20 weeks of paid
