@@ -3,8 +3,11 @@
 require(dplyr)
 require(ggplot2)
 
-leave_data = read.csv('leave_data.csv', header = T, stringsAsFactors = F)
-gap_data   = read.csv('gap_data.csv', header = F, stringsAsFactors = F)
+leave_data_file = 'data/raw/leave_data.csv'
+gap_data_file   = 'data/working/gap_data.csv'
+
+leave_data = read.csv(leave_data_file, header = T, stringsAsFactors = F)
+gap_data   = read.csv(gap_data_file, header = F, stringsAsFactors = F)
 names(gap_data) = c('country', 'wage_gap')
 
 d = inner_join(leave_data, gap_data)
