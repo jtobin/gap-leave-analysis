@@ -45,3 +45,11 @@ dev.off()
 png('figures/p1.png')
 print(p4)
 dev.off()
+
+png('figures/p2.png')
+print(p2)
+dev.off()
+
+png('figures/p3.png')
+print(p5)
+dev.off()

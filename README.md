@@ -80,7 +80,7 @@ clarification in any of the data I've used.
 I didn't put much work into this - I just wanted to see what was up with the
 chart, and how a quick analysis performed on my own, with comparable data,
 would measure up.  You can see what I did in the *analysis.r* file.  It's just
-a couple of plots that I'll leave here, without comment.
+a few of plots that I'll leave here, without comment.
 
 **Feel free to fork and improve the analysis if you think my basic one is
 lacking, or if you spot any errors**.
@@ -92,4 +92,14 @@ First, the same chart from the tweet:
 And then, wage gap data vs *total* parental leave:
 
 ![gap vs total parental leave](https://github.com/jtobin/gap-leave-analysis/raw/master/figures/p1.png)
+
+The variation is such that that you might argue a quantile regression would be
+more suiting.  Here's the first plot again with a 0.5 (median) quantile
+regression line:
+
+![gap vs paid parental leave](https://github.com/jtobin/gap-leave-analysis/raw/master/figures/p2.png)
+
+And the same for wage gap vs total parental leave:
+
+![gap vs total parental leave](https://github.com/jtobin/gap-leave-analysis/raw/master/figures/p3.png)
 

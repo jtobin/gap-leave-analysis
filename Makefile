@@ -16,7 +16,7 @@ data/working/gap_data.csv: \
 		$(GAP_DATA)
 	cat $< | grep 2012 | cut -d, -f2,17 > $@
 
-figures/p0.png figures/p1.png:
+figures/p0.png figures/p1.png figures/p2.png figures/p3.png:
 	./src/analysis.r
 
 all: data/working/gap_data.csv figures/p0.png
