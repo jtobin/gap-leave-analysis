@@ -89,9 +89,13 @@ First, the same chart from the tweet:
 
 ![gap vs paid parental leave](https://github.com/jtobin/gap-leave-analysis/raw/master/figures/p0.png)
 
+
 And then, wage gap data vs *total* parental leave:
 
 ![gap vs total parental leave](https://github.com/jtobin/gap-leave-analysis/raw/master/figures/p1.png)
+
+The measured correlation is 0.1917 in the case of parental leave, vs. 0.1319
+for total leave.
 
 The variation is such that that you might argue a quantile regression would be
 more suiting.  Here's the first plot again with a 0.5 (median) quantile

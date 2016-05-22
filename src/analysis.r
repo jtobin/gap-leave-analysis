@@ -12,6 +12,12 @@ names(gap_data) = c('country', 'wage_gap')
 
 d = inner_join(leave_data, gap_data)
 
+# correlation, paid parental leave/wage gap
+c0 = cor(d$wage_gap, d$paid_parental_length_weeks)
+
+# correlation, total parental leave/wage gap
+c1 = cor(d$wage_gap, d$total_paid_length_weeks)
+
 # reproducing the plot from the tweet
 p0 = ggplot(d, aes(paid_parental_length_weeks, wage_gap, label = country)) +
   xlim(0, 200) +
