@@ -14,8 +14,8 @@ d = inner_join(leave_data, gap_data)
 
 # reproducing the plot from the tweet
 p0 = ggplot(d, aes(paid_parental_length_weeks, wage_gap, label = country)) +
-  xlim(0, 160) +
-  ylim(0, 50) +
+  xlim(0, 180) +
+  ylim(0, 60) +
   geom_point() +
   geom_text(hjust = 0, nudge_x = 0.2)
 
