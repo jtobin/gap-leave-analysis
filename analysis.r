@@ -1,3 +1,5 @@
+#!/usr/local/bin/Rscript
+
 require(dplyr)
 require(ggplot2)
 
@@ -33,3 +35,10 @@ p4 = p3 + geom_smooth(method = 'lm', se = F)
 # w/a (median) quantile regression line
 p5 = p3 + geom_quantile(quantiles = 0.5)
 
+png('figures/p0.png')
+print(p1)
+dev.off()
+
+png('figures/p1.png')
+print(p4)
+dev.off()
